@@ -1,13 +1,14 @@
-<H3>NAME : MANOJ KUMAR S</H3>
-<H3>REGISTER NUMBER : 212223240082</H3>
+<H3>ENTER YOUR NAME : Manoj Kumar S</H3>
+<H3>ENTER YOUR REGISTER NO : 212223240086</H3>
+<H3>DATE:29/04/25</H3>
 <H1 Align="center">Project Based Experiment<H1>
-<H3>Objective :</H3>
-  
-Perform sentiment analysis using your Facebook data and filter the data that has only Positive feedback for the code given in the following link.
 
-<H3>Program:</H3>
+### Objective:
+
+Perform sentiment analysis using your Facebook data and filter the data that has only negative feedback for the code given in the following link.
   
-```py
+### Program:
+```
 pip install pandas textblob
 import pandas as pd
 from textblob import TextBlob
@@ -26,17 +27,19 @@ df['Sentiment'] = df['FBPost'].apply(analyze_sentiment)
 # Output the DataFrame with sentiment analysis results
 print(df.head())
 
-# Filter out rows with positive sentiment (label 'P')
-positive_feedback = df[df['Label'] == 'P']
+# Filter out rows with negative sentiment (label 'N')
+negative_feedback = df[df['Label'] == 'N']
 
 # Output the negative feedback
-print(positive_feedback)
+print(negative_feedback)
+
 ```
+### Output: 
 
-<H3>Output:</H3>
+![image](https://github.com/Saibandhavi75/Project-Based-Experiment-AAI/assets/94208895/7a7a3bc9-1fc3-489a-8b22-4b5f1563372d)
+![image](https://github.com/Saibandhavi75/Project-Based-Experiment-AAI/assets/94208895/46e41ff1-c850-4c47-b4b6-2cb22a99018b)
 
-![image](https://github.com/harish-ragavendra-25/Project-Based-Experiment-AAI/assets/114852180/54ebfee7-e1df-4fbe-aebd-82d75898206b)
 
 
-<H3>Inference:</H3>
-Thus sentiment analysis using Facebook data is done and filtering the data that has only positive feedback for the code is executed successfully.
+### Inference:
+Thus sentiment analysis using your Facebook data ias done and filtering the data that has only negative feedback for the code is done.
